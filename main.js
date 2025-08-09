@@ -10,11 +10,14 @@ function checkPalindroma(string){
         
     if(str1 == str2){
         
-        return console.log(`Frase palindroma`);
+        console.log(`Frase palindroma`);
+        return true;
+
         
     } else {
         
-        return console.log(`Frase non palindroma`);
+        console.log(`Frase non palindroma`);
+        return false;
         
     }
 
@@ -22,4 +25,5 @@ function checkPalindroma(string){
 
 let frase = prompt('Inserisci una frase qui');
 
-checkPalindroma(frase);
+let check = checkPalindroma(frase);
+console.log(check);
